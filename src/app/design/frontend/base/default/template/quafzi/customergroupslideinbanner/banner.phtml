@@ -1,0 +1,16 @@
+<?php if ($config = $this->getBannerConfig()): ?>
+<div class="slidein-banner collapsed">
+    <div class="banner-handle">
+        <a class="title" href="#" onclick="openSlideInBanner();">
+            <?php echo $this->escapeHtml($config['title']); ?>
+        </a>
+    </div>
+    <div class="banner-content" style="display: none">
+        <?php echo Mage::getSingleton('core/layout')
+            ->createBlock('cms/block')
+            ->setBlockId($config['block_id'])
+            ->toHtml();
+        ?>
+    </div>
+</div>
+<?php endif; ?>

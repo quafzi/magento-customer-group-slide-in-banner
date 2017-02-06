@@ -1,0 +1,15 @@
+{
+    "name": "quafzi/magento-customer-group-slide-in-banner",
+    "license": "OSL-3.0",
+    "type": "magento-module",
+    "description": "Magento module to show slide-in banners to customer groups",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name":"Thomas Birke",
+            "email":"magento@netextreme.de"
+        }
+    ]
+}

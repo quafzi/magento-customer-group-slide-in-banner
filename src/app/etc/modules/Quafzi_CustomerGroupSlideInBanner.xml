@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Quafzi_CustomerGroupSlideInBanner>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+              <Mage_SalesRule /> <!-- to override config section visibility -->
+            </depends>
+        </Quafzi_CustomerGroupSlideInBanner>
+    </modules>
+</config>

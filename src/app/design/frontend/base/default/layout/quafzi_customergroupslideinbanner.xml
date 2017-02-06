@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default ifconfig="promo/banners/enabled">
+        <reference name="head">
+            <action method="addCss"><stylesheet>css/quafzi/customergroupslideinbanner.css</stylesheet></action>
+            <action method="addJs"><script>quafzi/customergroupslideinbanner.js</script></action>
+        </reference>
+        <reference name="before_body_end">
+            <block type="quafzi_customergroupslideinbanner/banner" template="quafzi/customergroupslideinbanner/banner.phtml" name="quafzi_customergroupslideinbanner" as="slide_in_banner" />
+        </reference>
+    </default>
+</layout>

@@ -1,0 +1,7 @@
+src/app/code/community/Quafzi/CustomerGroupSlideInBanner     app/code/community/Quafzi/CustomerGroupSlideInBanner
+src/app/design/frontend/base/default/layout/* app/design/frontend/base/default/layout/
+src/app/design/frontend/base/default/template/quafzi/* app/design/frontend/base/default/template/quafzi/
+src/app/etc/modules/*    app/etc/modules/
+src/app/locale/de_DE/*    app/locale/de_DE/
+src/js/quafzi/* js/quafzi/
+src/skin/frontend/base/default/css/quafzi/* skin/frontend/base/default/css/quafzi/

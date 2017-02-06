@@ -1,0 +1,30 @@
+.slidein-banner {
+  bottom: 1px;
+  position: fixed;
+  width: 100%;
+  z-index: 10001;
+}
+.slidein-banner.collapsed .banner-handle {
+  border-bottom: red solid 2px;
+}
+.slidein-banner .banner-handle {
+  height: 20px;
+  text-align: center;
+}
+.slidein-banner .banner-handle .title {
+  background: red;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  height: 16px;
+  line-height: 16px;
+  padding: 2px 20px;
+  text-align: center;
+}
+.slidein-banner .banner-content{
+  background: white;
+  border: 1px solid red;
+  margin: 0 20px;
+  overflow: auto;
+  padding: 10px;
+}
