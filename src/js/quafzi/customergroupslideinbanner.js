@@ -4,13 +4,11 @@ window.addEventListener('load', function () {
       var banner = document.querySelector('.slidein-banner')
       var content = document.querySelector('.slidein-banner .banner-content')
       if (banner.classList.contains('collapsed')) {
-        banner.classList.remove('collapsed')
-        content.style.display = 'block'
-        content.style.height = window.innerHeight * 0.6 + 'px'
+        content.style.height = '100%';
       } else {
-        banner.classList.add('collapsed')
-        content.style.display = 'none'
+        content.style.height = 0;
       }
+      banner.classList.toggle('collapsed')
       e.preventDefault()
     }
   }

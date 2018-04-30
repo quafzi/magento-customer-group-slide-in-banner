@@ -1,11 +1,12 @@
 .slidein-banner {
-  bottom: 1px;
+  font-size: 120%;
   position: fixed;
+  top: 1px;
   width: 100%;
   z-index: 10001;
 }
 .slidein-banner.collapsed .banner-handle {
-  border-bottom: red solid 2px;
+  height: 0;
 }
 .slidein-banner .banner-handle {
   height: 20px;
@@ -17,14 +18,28 @@
   display: inline-block;
   font-weight: bold;
   height: 16px;
-  line-height: 16px;
-  padding: 2px 20px;
+  padding: 5px 25px;
   text-align: center;
 }
-.slidein-banner .banner-content{
+.slidein-banner .banner-content {
   background: white;
   border: 1px solid red;
-  margin: 0 20px;
+  margin: -2px 20px 0 20px;
   overflow: auto;
   padding: 10px;
+  transition-property: height line-height;
+  transition-duration: 0.3s;
+}
+.slidein-banner .banner-content p {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.8s;
+}
+.slidein-banner.collapsed .banner-content {
+  height: 0;
+  line-height: 0;
+  padding: 0;
+}
+.slidein-banner.collapsed .banner-content p {
+  opacity: 0;
 }
