@@ -93,7 +93,7 @@ class Quafzi_CustomerGroupSlideInBanner_Block_Adminhtml_Form_Field_Banners
     {
         if (!$this->_cmsBlockSelectRenderer) {
             $this->_cmsBlockSelectRenderer = $this->getLayout()->createBlock(
-                'quafzi_customergroupslideinbanner/adminhtml_form_field_banners_customer_group_select',
+                'quafzi_customergroupslideinbanner/adminhtml_form_field_banners_cms_block_select',
                 '',
                 [ 'is_render_to_js_template' => true ]
             );
@@ -113,6 +113,10 @@ class Quafzi_CustomerGroupSlideInBanner_Block_Adminhtml_Form_Field_Banners
     {
         $row->setData(
             'option_extra_attr_' . $this->_getCustomerGroupSelectRenderer()->calcOptionHash($row->getData('customer_group_id')),
+            'selected="selected"'
+        );
+        $row->setData(
+            'option_extra_attr_' . $this->_getCmsBlockSelectRenderer()->calcOptionHash($row->getData('block_id')),
             'selected="selected"'
         );
 
